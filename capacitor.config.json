@@ -1,0 +1,13 @@
+{
+  "appId": "com.ponto.app",
+  "appName": "ponto-app",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https"
+  },
+  "plugins": {
+    "PushNotifications": {
+      "presentationOptions": ["badge", "sound", "alert"]
+    }
+  }
+}

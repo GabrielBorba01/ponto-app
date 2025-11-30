@@ -1,0 +1,19 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+    <application>
+        <!-- Adicionar para FCM -->
+        <meta-data 
+            android:name="com.google.firebase.messaging.default_notification_icon" 
+            android:resource="@mipmap/ic_launcher" />
+        <meta-data 
+            android:name="com.google.firebase.messaging.default_notification_color" 
+            android:resource="@color/colorPrimary" />
+    </application>
+
+    <!-- Permissões de localização -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <!-- Permissões de notificação (Android 13+) -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
+</manifest>
